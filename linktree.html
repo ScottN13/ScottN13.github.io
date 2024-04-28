@@ -1,10 +1,36 @@
-<html data-theme="dim" class="bg-error">      
+<html data-theme="blob">      
         <head>
             <title>Link Tree | scottnewman.xyz</title>
             <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
             <script src="https://cdn.tailwindcss.com"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
             <link rel="icon" href="https://avatars.githubusercontent.com/u/87974560?v=4">
+                <style>
+                  body {
+                background: linear-gradient(91deg, #0bff00, #0005ff);
+                background-size: 400% 400%;
+
+                -webkit-animation: AnimationName 8s ease infinite;
+                -moz-animation: AnimationName 8s ease infinite;
+                animation: AnimationName 8s ease infinite;
+                }
+
+                @-webkit-keyframes AnimationName {
+                    0%{background-position:4% 0%}
+                    50%{background-position:97% 100%}
+                    100%{background-position:4% 0%}
+                }
+                @-moz-keyframes AnimationName {
+                    0%{background-position:4% 0%}
+                    50%{background-position:97% 100%}
+                    100%{background-position:4% 0%}
+                }
+                @keyframes AnimationName {
+                    0%{background-position:4% 0%}
+                    50%{background-position:97% 100%}
+                    100%{background-position:4% 0%}
+                }
+    </style>
         </head>
     <body>
         <header>
@@ -39,7 +65,8 @@
               <div class="card w-96 bg-base-300 flex-1 center shadow-xl text-base-content p-10px margin-auto" style="margin-left: 10px; margin-top: 15px;">
                 <div class="card-body">
                   <h2 class="card-title">Link Tree</h2>
-                  <p>This page is a hub for all useful, funny and good-to-know links out there.</p>
+                  <p>This page is a hub for all useful, funny and good-to-know links out there.</p>                  
+                  <p><i class="fas fa-info-circle" style="padding-right: 5px;"></i>If you want to add some links, contact me via my discord server!</p>
                 </div>
               </div>
             </div>
@@ -47,9 +74,20 @@
               <div class="card w-96 bg-base-300 flex-1 center shadow-xl text-base-content p-10px margin-auto" style="margin-left: 10px; margin-top: 15px;">
                 <div class="card-body">
                   <h2 class="card-title">Classifications</h2>
-                  <li>Funny - such as memes or collection of funny videos</li>
-                  <li>Useful - such as tools or software repos</li>
-                  <p><i class="fas fa-info-circle" style="padding-right: 5px;"></i>If you want to add some links, contact me via my discord server!</p>
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn m-1">Click to view classifications</div>
+                    <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-300 text-primary-content">
+                      <div class="card-body">
+                        <span class="badge badge-primary badge-outline">User-Submitted</span>
+                        <span class="badge badge-success badge-outline">Friends</span>
+                        <span class="badge badge-primary badge-outline">Funny</span>
+                        <span class="badge badge-primary badge-outline">Useful</span>
+                        <span class="badge badge-warning badge-outline">NEW!</span>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -76,6 +114,8 @@
                 <a class="join-item join-horizontal  link" href="https://discord.gg/Ht5zzZ4Teq">discord</a>
                 <a class="join-item join-horizontal  link" href="https://twitter.com/scotttynewman">twitter/X</a>
                 <a class="join-item join-horizontal  link" href="https://www.reddit.com/user/Crazyman-X/">reddit</a>
+                <div class="join-item join-horizontal divider divider-horizontal"></div>
+                <a class="join-item join-horizontal link" href="https://www.scottnewman.xyz/credits.html">credits</a>
               </div>
             </aside>
           </footer>

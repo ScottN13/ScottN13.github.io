@@ -48,3 +48,35 @@ body {
     background-position: 4% 0%
   }
 }
+
+
+.side-panel{
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  margin-left: 25px;
+  width: 387px;
+ 
+}
+
+.side-panel-body{ 
+  text-align: left;
+  overflow-y: scroll;
+  scrollbar-color: red;
+  height: 550px;
+  overflow-x: hidden;
+  width: 385px;
+}
+
+.landing-box{
+  margin-top: 25px;
+  margin-left: 25px;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  margin-inline-start: 50%;
+}
+
+.title{
+  font-size: 25px;
+}

@@ -80,3 +80,16 @@ body {
 .title{
   font-size: 25px;
 }
+
+.dropdown-outlined{
+  outline: auto;
+}
+
+.join-item-space{
+  padding: 5px;
+  margin-left: 37%;
+}
+
+.really-small-text-because-of-daisy-ui{
+  font-size: 8px;
+}

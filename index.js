@@ -1,1 +1,0 @@
-var toast = document.getElementById('wip');

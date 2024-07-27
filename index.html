@@ -80,6 +80,13 @@
         </div>
       </div>
 
+      <div id="app"></div>
+      <script src="https://unpkg.com/webamp"></script>
+      <script>
+          const app = document.getElementById("app")
+          const webamp = new Webamp();
+          webamp.renderWhenReady(app);
+      </script>
 
       <footer class="footer absolute bottom-0 p-4 bg-base-100 text-base-content text-xs bg-opacity-1 margin-auto">
         <aside>
@@ -95,34 +102,9 @@
             <a class="join-item join-horizontal  link" href="https://twitter.com/scotttynewman">twitter/X</a>
             <a class="join-item join-horizontal  link" href="https://www.reddit.com/user/Crazyman-X/">reddit</a>
             <div class="join-item join-horizontal divider divider-horizontal"></div>
-            <!-- here is the music player-->
-
-            <audio id="cs_audio" controls>
-              <source src="assets/snake_bazaar-noisy_oyster.mp3" type="audio/mpeg">
-            </audio>
-            <div style="text-align: center;">
-            <div id="cs_audioplayer">
-                 <span style="position: relative;left: 0;float: left;font-size: 0.87em;"><span id="cs_audio_current_time">0:0</span></span>
-                 <span id="cs_play_pause_btn" style="position: relative;">
-                     <i class="far fa-play-circle" id="cs_audio_play"></i>
-                     <i class="far fa-pause-circle" id="cs_audio_pause"></i>
-                 </span>
-                 <span id="cs_audio_sound" style="position: relative;right: 5px;float: right;margin-left: 15px;top: -2px;">
-                     <i style="vertical-align: middle;font-size: 1.14em;" class="fas fa-volume-down"></i>
-                     <div class="cs_volBar" style="height: 6px; width: 65px;background-color: #ccc;display: inline-block;cursor: pointer;">
-                       <div class="cs_volume" style="height: 6px;width: 28px;background-color: red;position: absolute;"></div>
-                     </div>
-                 </span>
-                 <span id="cs_audio_duration" style="position: relative;right: 0;float: right;padding-left: 10px;font-size: 0.87em;"></span>
-                 <div class="cs_audio_bar">
-                     <div class="cs_audio_bar_now"></div>
-                     <div class="cs_audio_bar_loaded"></div>
-                 </div>
-            </div>
           </div>
         </aside>
       </footer>
-
     </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
-# Portofolio
-my very own portofolio website!
+my very own website
 
 # Other Credits
-Music player made by CodeSpeedy (https://www.codespeedy.com/)
+Music player made by [webamp.org](https://webamp.org/)
+Every song in assets/audio goes to their respective authors.

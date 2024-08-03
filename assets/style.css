@@ -54,9 +54,8 @@ body {
   position: absolute;
   text-align: center;
   margin: auto;
-  margin-left: 25px;
-  width: 387px;
- 
+  width: 30%;
+  height: 100%;
 }
 
 .side-panel-body{ 
@@ -89,6 +88,11 @@ body {
   padding: 5px;
 }
 
-.really-small-text-because-of-daisy-ui{
-  font-size: 8px;
+.text-space{
+  padding-left: 15px;
+}
+
+.navbar-space{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }

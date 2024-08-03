@@ -6,7 +6,7 @@ function newsDropdown(): void {
 
 window.onclick = function(event: MouseEvent): void {
     if (!(event.target as Element).matches('dropdownbtn')) {
-        var dropdowns = document.querySelectorAll(".news-content");
+        var dropdowns = document.querySelectorAll("news-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i] as HTMLElement;

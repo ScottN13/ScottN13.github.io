@@ -21,73 +21,41 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-center bg-base-100">
-        <div class="flex-1">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-disabled btn-circle avatar">
-            <div class="w-10 rounded-full">
-              <img alt="pfp" src="https://avatars.githubusercontent.com/u/87974560?v=4" />
-            </div>
-          </div>
-          <h1 class="text-success text-xl join-item join-horizontal p-2">scottnewman.xyz</h1>
-          <div class="divider divider-horizontal"></div>
-          <h1 class="text-xl text-base-content join-horizontal">Home</h1>
+   <div class="bg-base-100 absolute text-base-content side-panel" style="overflow: scroll;">
+    <div class="flex-1 join join-item-space">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-disabled btn-circle avatar join-item join-horizontal join-item-space">
+        <div class="w-10 rounded-full">
+          <img alt="pfp" src="https://avatars.githubusercontent.com/u/87974560?v=4">
         </div>
-        <div role="tablist" class="tabs tabs-bordered p-3">
-          <a role="tab" class="tab tab-active link-hover" href="https://scottnewman.xyz/"><i class="fas fa-home" style="padding: 5px;"></i>About Me</a>
-          <a role="tab" class="tab link-hover" href="https://www.scottnewman.xyz/linktree.html"><i class="fas fa-link" style="padding: 5px;"></i>funny links</a>
-          <a role="tab" class="tab link-hover " href="https://blog.scottnewman.xyz/"><i class="fas fa-blog" style="padding: 5px;"></i>Blog / Guides</a>
-          <a role="tab" class="tab tab-disabled link-hover" href="https://scottnewman.xyz/404.html"><i class="fas fa-book" style="padding: 5px;"></i>Guestbook</a>
-          <a role="tab" class="tab tab-disabled link-hover" href="https://scottnewman.xyz/404.html"><i class="fas fa-download" style="padding: 5px;"></i>File Repo</a>
-        </div>
-      </nav>
-    </header>
+      </div>  
+      <h1 class="card-title text-success join-item join-horizontal join-item-space text-xl">scottnewman.xyz</h1>
+    </div>
 
+    <div class="divider divider-start text-lg text-space">Home</div>
 
-    <div class="grid-container">
-      <div class="bg-opacity-0 side-panel shadow-xl ">
-        <div class="card w-96 bg-base-300 shadow-xl text-base-content">
-          <h2 class="title" style="padding: 15px;"><button onclick="newsDropdown" id="dropdownbtn"><i class="fas fa-newspaper" style="margin-right: 10px;"></i>Latest News and Uploads</button></h2>
-          <div class="card-body bg-base-100 side-panel-body" id="news">
-            <div id="news-content">
-              <li class="text-lg">Blog:</li>
-              <iframe src="https://blog.scottnewman.xyz" title="Blog Embed" height="300" width="320" style="border: none;" scrolling="no"></iframe>
-              <div class="divider"></div>
-              <li class="text-lg">Youtube:</li>
-              <iframe
-              src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UU6q41x-Ei4YehBNtVRYzf_g" width="344" height="188" allowfullscreen></iframe>
-              <div class="divider"></div>
-              <li>Discord Activity</li>
-              <iframe src="https://discord.com/widget?id=1190647465645449256&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+    <ul class="menu bg-base-100 rounded-box w-56" style="text-align: center; margin-left: 25%; margin-bottom: 5%;">
+      <li><a class="active navbar-space" href="https://www.scottnewman.xyz/"><i class="fas fa-home" style="padding: 5px;"></i>About Me</a></li>
+      <li><a class="navbar-space" href="https://www.scottnewman.xyz/linktree.html"><i class="fas fa-link" style="padding: 5px;"></i>funny links</a></li>
+      <li><a class="navbar-space" href="https://blog.scottnewman.xyz/"><i class="fas fa-blog" style="padding: 5px;"></i>Blog / Guides</a></li>
+      <li><a class="navbar-space" href="https://scottnewman.xyz/404.html"><i class="fas fa-book" style="padding: 5px;"></i>Guestbook</a></li>
+      <li><a class="navbar-space" href="https://scottnewman.xyz/404.html"><i class="fas fa-download" style="padding: 5px;"></i>File Repo</a></li>     
+    </ul>
 
-      <div class="card w-96 bg-base-300 text-base-content shadow-xl landing-box">
-        <h2 class="title" style="padding: 15px;">Welcome!</h2>
-        <div class="card-body bg-base-100">
-          <p>You just landed on this page!</p>
-          <div class="divider text-lg">Who am I?</div>
-          <p>I'm Scott, a romanian who enjoys gaming and programming.</p>
-          <p>I like helping out people and hang out.</p>
-          <h6 class="really-small-text-because-of-daisy-ui">i also speak german.</h6>
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn m-1" title="Click anywhere else to close dropdown.">My Projects</div>
-            <ul tabindex="0" class="dropdown-content dropdown-outlined z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li>boxpyshell - a shell made entirely in python!</li>
-            </ul>
-          </div>
-          <div class="divider text-lg">Socials</div>
-          <div class="join">
-            <a class="join-item join-horizontal join-item-space" title="youtube"><i class="fab fa-youtube fa-lg"></i></a>
-            <a class="join-item join-horizontal join-item-space" title="reddit"><i class="fab fa-reddit fa-lg"></i></a>
-            <a class="join-item join-horizontal join-item-space" title="twitter"><i class="fab fa-twitter fa-lg"></i></a>
-            <a class="join-item join-horizontal join-item-space" title="github"><i class="fab fa-github fa-lg"></i></a>
-            <a class="join-item join-horizontal join-item-space" title="github website repo"><i class="fab fa-github-square fa-lg"></i></a>
-          </div>  
-        </div>
-      </div>
+    <div class="divider divider-start text-lg text-space">News and Updates</div>
+
+    <div id="news-content">
+      <li class="text-lg">Blog:</li>
+      <iframe src="https://blog.scottnewman.xyz" title="Blog Embed" height="300" width="320" style="border: none;" scrolling="no"></iframe>
+      <div class="divider"></div>
+      <li class="text-lg">Youtube:</li>
+      <iframe src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UU6q41x-Ei4YehBNtVRYzf_g" width="344" height="188" allowfullscreen></iframe>
+      <div class="divider"></div>
+      <li>Discord Activity</li>
+      <iframe src="https://discord.com/widget?id=1190647465645449256&theme=dark" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+
+   </div>
+      
 
       <div id="app" style="position: absolute; bottom: 70; right: 150;"></div>
       <script src="https://unpkg.com/webamp"></script>
@@ -122,9 +90,9 @@
               },
               playlist: {
                 position: { top: 0, left: 0 },
-                shadeMode: true,
+                shadeMode: false,
                 // size: { extraHeight: 3, extraWidth: 7 },
-                closed: false,
+                closed: true,
               },
               },
               enableDoubleSizeMode: false,
@@ -155,6 +123,5 @@
           </div>
         </aside>
       </footer>
-    </div>
   </body>
 </html>

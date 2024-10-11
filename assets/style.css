@@ -96,3 +96,9 @@ body {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+.page-content{
+  margin: auto;
+  padding-left: 50%;
+  padding-top: 20%;
+}

@@ -101,4 +101,10 @@ body {
   margin: auto;
   padding-left: 50%;
   padding-top: 20%;
+  padding-bottom: 20%
+}
+
+.page-item{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

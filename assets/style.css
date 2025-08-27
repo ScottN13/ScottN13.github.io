@@ -38,6 +38,7 @@ body {
    background-color: violet;
    border-radius: 15px;
    text-decoration: none;
+   color: purple;
 }
 
 .container a:link{

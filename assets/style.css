@@ -1,0 +1,59 @@
+body {
+   font-family: 'Brush Script MT', cursive;
+   background: #3E1E68;
+}
+
+.container {
+   text-align: center;
+   margin-top: 20%;
+   margin-left: 20%;
+   margin-right: 20%;
+   padding-left: 50%;
+   padding-top: 50%;
+   border: 2px solid purple;
+   padding: 20px;
+   border-radius: 25px;
+   background-color: darkorchid;
+   border-style: none none solid none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1{
+   font-size: 45px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   color: white;
+}
+
+.container p{
+   font-size: 20px;
+   color: white;
+   margin-bottom: 20px;
+   margin-top: 20px; 
+}
+
+.container a{
+   margin-top: 20px;
+   padding: 10px;
+   background-color: violet;
+   border-radius: 15px;
+   text-decoration: none;
+}
+
+.container a:hover{
+   background-color: purple;
+   color: white;
+   text-decoration: none;
+   border-radius: 15px;
+}
+
+.container i{
+   padding-right: 10px;
+   padding-left: 5px;
+}
+
+.tooltip {
+   color: gray;
+   font-size: 10px;
+   text-align: center;
+}

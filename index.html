@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="sodium.fm">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <!--My overrides-->
         <link rel="stylesheet" href="assets/style.css">
         <script src="assets/index.ts"></script>
@@ -17,13 +18,20 @@
         <!-- to be reworked -->
     </head>
     <body>
-        <div class="container">
-            <h1>name in the works lmao</h1>
-            <p>Unfortunately, this website is under construction!</p>
-            <p>In the meantime, check out the links below:</p>
-            <a href="#"><i class="fab fa-github-square"></i>github repo</a>
-            <a href="#"><i class="fab fa-discord"></i>discord server</a>
-            <a href="#"><i class="fab fa-youtube"></i>youtube channel</a>
-        </div>
+        
+        <nav class="navbar rounded-b-xl">
+            <div class="flex justify-between items-center p-4">
+                <div class="text-2xl font-bold text-red-50 flex justify-between">
+                    <img alt="pfp" class="w-10 rounded-full padding-l mr-3" src="https://avatars.githubusercontent.com/u/87974560?v=4" />
+                    <h1 class="mt-0.5">sodium.fm</h1>
+                </div>
+                <div class="space-x-4">
+                    <a href="#" class="text-purple-50 hover:bg-purple-500">Home</a>
+                    <a href="#" class="text-purple-50 hover:bg-purple-500">About</a>
+                    <a href="#" class="text-purple-50 hover:bg-purple-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+
     </body> 
 </html>

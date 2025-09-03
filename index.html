@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <!--My overrides-->
-        <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/index.js" defer></script>
         <script src="assets/index.ts"></script>
+        <link rel="stylesheet" href="assets/style.css">
         <!--Discord Share Link Embed-->
         <meta content="sodiumfm.xyz" property="og:title" />
         <meta content="website used for funny" property="og:description" />
@@ -17,21 +18,29 @@
         <meta content="#B22222" data-react-helmet="true" name="theme-color" />
         <!-- to be reworked -->
     </head>
-    <body>
-        
+    <body> 
         <nav class="navbar rounded-b-xl">
             <div class="flex justify-between items-center p-4">
                 <div class="text-2xl font-bold text-red-50 flex justify-between">
                     <img alt="pfp" class="w-10 rounded-full padding-l mr-3" src="https://avatars.githubusercontent.com/u/87974560?v=4" />
-                    <h1 class="mt-0.5">sodium.fm</h1>
+                    <h1 class="mt-0.5">page title</h1>
+                    <div class="slash"></div>
+                    <h2 class="">page title</h2>
                 </div>
                 <div class="space-x-4">
-                    <a href="#" class="text-purple-50 hover:bg-purple-500">Home</a>
-                    <a href="#" class="text-purple-50 hover:bg-purple-500">About</a>
-                    <a href="#" class="text-purple-50 hover:bg-purple-500">Contact</a>
+                    <a href="#" class="text-purple-50 p-1">link 1</a>
+                    <a href="#" class="text-purple-50 p-1">link 2</a>
+                    <a href="#" class="text-purple-50 p-1">link 3</a>
                 </div>
+                <button id="themebtn" class="switcher">
+                    EEEEE
+                </button>
             </div>
         </nav>
+
+        <div class="card">
+            <h1>lmao</h1>
+        </div>
 
     </body> 
 </html>

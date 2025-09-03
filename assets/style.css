@@ -1,9 +1,24 @@
-body {
-   font-family: 'Brush Script MT', cursive;
-   background: #3E1E68;
+:root {
+   --bg-color: #3E1E68;
 }
 
-.container {
+.darkmode {
+   background: #1d0937;
+}
+
+body {
+   font-family: 'Brush Script MT', cursive;
+   background-color: var(--bg-color);
+}
+/* #1d0937 for dark mode backgroud */
+
+
+.switcher{
+   border: 5px solid pink;
+   border-radius: 25px;
+}
+
+.card {
    text-align: center;
    margin-top: 20%;
    margin-left: 20%;
@@ -18,21 +33,21 @@ body {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.container h1{
+.card h1{
    font-size: 45px;
    margin-bottom: 20px;
    margin-top: 20px;
    color: white;
 }
 
-.container p{
+.card p{
    font-size: 20px;
    color: white;
    margin-bottom: 20px;
    margin-top: 20px; 
 }
 
-.container a{
+.card a{
    margin-top: 20px;
    padding: 10px;
    background-color: violet;
@@ -41,19 +56,19 @@ body {
    color: purple;
 }
 
-.container a:link{
+.card a:link{
    text-decoration: none;
    color: purple;
 }
 
-.container a:hover{
+.card a:hover{
    background-color: purple;
    color: white;
    text-decoration: none;
    border-radius: 15px;
 }
 
-.container i{
+.card i{
    padding-right: 10px;
    padding-left: 5px;
 }
@@ -72,3 +87,33 @@ body {
    border-style: none none solid none;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.navbar a:hover{
+   background-color: purple;
+   color: white;
+   text-decoration: none;
+   border-radius: 15px;
+   padding: 5px;
+}
+
+.navbar a:link{
+   text-decoration: none;
+}
+
+.navbar a{
+   margin-top: 20px;
+   background-color: #ac39e6;
+   border-radius: 15px;
+   text-decoration: none;
+}
+
+.slash {
+   color: white;
+   border: 3px solid;
+   border-radius: 25px;
+   padding: 0.2px;
+   margin-left: 10px;
+   margin-right: 10px;
+   background-color: white;
+}
+

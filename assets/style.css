@@ -7,6 +7,7 @@
    --active-badge: rgb(15, 228, 15);
    --warning-badge: rgb(255, 204, 0);
    --error-badge: rgb(255, 0, 0);
+   --missing-badge: gray;
 }
 
 
@@ -17,24 +18,19 @@ body {
 
 
 
-.switcher{
-   border: 5px solid pink;
-   border-radius: 25px;
-}
-
 .card {
    text-align: center;
-   margin-top: 20%;
-   margin-left: 20%;
-   margin-right: 20%;
    padding-left: 5%;
    padding-top: 5%;
+   margin-top: 5%;
    border: 2px solid purple;
    padding: 20px;
    border-radius: 25px;
    background-color: var(--primary-color);
    border-style: none none solid none;
    box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), -2px 10px 20px 0 rgba(0, 0, 0, 0.19);
+   position: relative;
+   margin-left: 5%;
 }
 
 .card h1{
@@ -78,11 +74,6 @@ body {
    padding-left: 5px;
 }
 
-.tooltip {
-   color: gray;
-   font-size: 10px;
-   text-align: center;
-}
 
 .navbar {
    padding-top: 50%;
@@ -196,4 +187,34 @@ body {
    padding-right: 4px;
    padding-top: 1px;
    padding-bottom: 1px;
+}
+
+.missing-badge {
+   border: 3px solid var(--missing-badge);
+   border-radius: 25px;
+   background-color: var(--missing-badge);
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+
+.table {
+   border: 2px solid purple;
+   padding: 20px;
+   border-radius: 25px;
+   background-color: var(--primary-color);
+   border-style: none none solid none;
+   box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), -2px 10px 20px 0 rgba(0, 0, 0, 0.19);
+   position: relative;
+   margin-left: 5%;
+   margin-top: 5%;
+}
+
+.tr {
+   border-bottom: 1px solid purple;
+}
+
+.td{
+   padding: 10px;
 }

@@ -1,16 +1,20 @@
 :root {
-   --bg-color: #3E1E68;
+   --bg-color: #321656; /* #1d0937 for dark mode backgroud */
+   --primary-color: #1d0937;
+   --secondary-color: #3E1E68;
+   --accent-color: darkorchid;
+   --hover-color: purple;
+   --active-badge: rgb(15, 228, 15);
+   --warning-badge: rgb(255, 204, 0);
+   --error-badge: rgb(255, 0, 0);
 }
 
-.darkmode {
-   background: #1d0937;
-}
 
 body {
    font-family: 'Brush Script MT', cursive;
    background-color: var(--bg-color);
 }
-/* #1d0937 for dark mode backgroud */
+
 
 
 .switcher{
@@ -23,14 +27,14 @@ body {
    margin-top: 20%;
    margin-left: 20%;
    margin-right: 20%;
-   padding-left: 50%;
-   padding-top: 50%;
+   padding-left: 5%;
+   padding-top: 5%;
    border: 2px solid purple;
    padding: 20px;
    border-radius: 25px;
-   background-color: darkorchid;
+   background-color: var(--primary-color);
    border-style: none none solid none;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), -2px 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card h1{
@@ -38,6 +42,7 @@ body {
    margin-bottom: 20px;
    margin-top: 20px;
    color: white;
+   text-shadow: 2px 2px 4px #000000;
 }
 
 .card p{
@@ -83,17 +88,38 @@ body {
    padding-top: 50%;
    border: 2px solid purple;
    padding: 5px;
-   background-color: darkorchid;
+   background-color: var(--primary-color);
    border-style: none none solid none;
+   position: relative;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.navbar .icon{
+   display: none;
+   padding: 5px;
+   background-color: var(--secondary-color);
+   color: white;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+
+.navbar h1{
+   text-shadow: 2px 2px 2px var(--secondary-color);
+   display: block;
+}
+
+.navbar h2{
+   text-shadow: 2px 2px 2px var(--secondary-color);
+   display: block;
+}
+
 .navbar a:hover{
-   background-color: purple;
+   background-color: var(--hover-color);
    color: white;
    text-decoration: none;
-   border-radius: 15px;
-   padding: 5px;
+   border-radius: 15px; 
+   margin-top: 20px;
 }
 
 .navbar a:link{
@@ -102,18 +128,72 @@ body {
 
 .navbar a{
    margin-top: 20px;
-   background-color: #ac39e6;
+   background-color: var(--secondary-color);
    border-radius: 15px;
    text-decoration: none;
 }
 
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:only-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}  
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 .slash {
-   color: white;
+   color: var(--hover-color);
    border: 3px solid;
    border-radius: 25px;
    padding: 0.2px;
    margin-left: 10px;
    margin-right: 10px;
-   background-color: white;
+   background-color: var(--hover-color);
+   box-shadow: 0 0 10px 2px rgba(128,0,128,0.3);
+   transform: skew(-14deg);
 }
 
+.active-badge {
+   border: 3px solid var(--active-badge);
+   border-radius: 25px;
+   background-color: var(--active-badge);
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+
+.warning-badge {
+   border: 3px solid var(--warning-badge);
+   border-radius: 25px;
+   background-color: var(--warning-badge);
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+
+.error-badge {
+   border: 3px solid var(--error-badge);
+   border-radius: 25px;
+   background-color: var(--error-badge);
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}

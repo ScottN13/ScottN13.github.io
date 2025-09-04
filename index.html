@@ -19,7 +19,7 @@
         <!-- to be reworked -->
     </head>
     <body> 
-        <nav class="navbar rounded-b-xl">
+        <nav class="navbar rounded-b-xl" id="navbar">
             <div class="flex justify-between items-center p-4">
                 <div class="text-2xl font-bold text-red-50 flex justify-between">
                     <img alt="pfp" class="w-10 rounded-full padding-l mr-3" src="https://avatars.githubusercontent.com/u/87974560?v=4" />
@@ -31,15 +31,21 @@
                     <a href="#" class="text-purple-50 p-1">link 1</a>
                     <a href="#" class="text-purple-50 p-1">link 2</a>
                     <a href="#" class="text-purple-50 p-1">link 3</a>
+                    <a href="javascript:void(0);" class="icon" onclick="sandwich()"><i class="fas fa-bars"></i></a>
                 </div>
-                <button id="themebtn" class="switcher">
-                    EEEEE
-                </button>
             </div>
         </nav>
 
         <div class="card">
             <h1>lmao</h1>
+            <p>this is a card</p>
+            <span class="active-badge">Active!</span>
+            <span class="warning-badge">Oh no!</span>
+            <span class="error-badge">Error!</span>
+        </div>
+
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
 
     </body> 

@@ -1,23 +1,8 @@
-let darkmode = localStorage.getItem("darkmode");
-const themebtn = document.getElementById("themebtn");
-
-const enableDarkmode = () => {
-    document.body.classList.add("darkmode");
-    localStorage.setItem("darkmode", "active");
+function sandwich() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
 }
-
-const disableDarkmode = () => {
-    document.body.classList.remove("darkmode");
-    localStorage.setItem("darkmode", null);
-}
-
-if (darkmode === "active") {
-    enableDarkmode();
-}   
-
-
-themebtn.addEventListener("click", () => {
-    darkmode = localStorage.getItem('darkmode')
-    darkmode !== "active" ? enableDarkmode() : disableDarkmode();
-});
-
